@@ -70,7 +70,10 @@ print("-"*30)
 for feature in record.features:
     print(feature.type)
     # to know the location 
+    
     print(feature.type,feature.location)
+    
+    print("hello") #demo
 
 
 
