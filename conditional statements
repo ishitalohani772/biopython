@@ -1,0 +1,182 @@
+marks = 89
+if marks>= 90:
+ print("excellent")
+else:
+ print("good")
+ # identation(space)
+ age = 16
+ if age>= 18:
+  print("adult")
+ else:
+  print("minor")
+  marks = 86
+  if marks>= 90:
+    print("grade A")
+    if marks>= 80:
+      print("grade B")
+  if marks>= 70:
+     print("grade C")
+  else:
+    print("fail")
+    # nested condition
+    age = 25
+    if age >= 18:
+      print("adult")
+     # comparision operators
+     # # logical operators(and,or,not) 
+x = 10
+if x!= 5:
+ print("x is not 5")
+ age = 25
+ if age>18 and age<30:
+   print("adult")
+   num = 6   # tell if it is a odd or a even number
+   if num%2 == 0:
+     print("even")
+   else :
+     print("odd")
+     
+      
+      # practice session from starting
+name = "ishita lohani"      #strings and variables,use of parenthesis
+age = 23  #it is not a string,it is an integer
+print("my name is",name)
+marks_1 = 95
+pi = 3.14
+print("pi value is",pi)      
+print("my marks in english",marks_1)
+marks_2 = marks_1        #storing one data into new variable,new variable pehle likhna h
+print(type(age))
+#different data types in python = integer(whole numbers),string,float(decimal value),bollean(T/F),none
+age = 20.0
+height = 54.2
+print(type(height))
+x = 126
+y = 100
+sum = x+y
+print(sum)
+difference = x-y
+print(difference)
+# write a program to calculate BMI
+weight = 50
+height = 5.6
+bmi = weight/height*height
+print(bmi)
+print(type(bmi))
+# take a radius of a circle and print the area
+radius = 10
+pi = 3.14
+area = pi*radius*radius
+print(area)
+# calculate simple interest
+P = 1800
+R = 12
+T = 57
+SI = P*R*T/100
+print(SI)
+# operators = 4 types of operators ie ;
+# 1. arithmetic operators = addition,subtraction,multiplication,division,modulus(remainder),exponent(power),floor division(removes decimal)
+#2.  relational(comaprison) = ==(equal to),!=(not equal to),>(greater than),<(less than),>=(greater than or equal to),<=(smaller than or equal to)
+#3. logical operations = and: true if both are true, or : true if at least one true, not: reverse the result
+#4. assignment operations = =(assign value),+=(add and assign),-=(subtract and assign),*=(multiply and assign),/=(divide and assign)
+x = 12
+y = 7
+division = x/y
+print(division)
+print(x%y)
+x = 2
+y = 2
+print(x**y)
+# logical operators
+# and
+code = "ATTGGGGCCTTTAAA"
+print(code[-2])
+# slicing = slice in between the letter as much as we need
+print(code[::-1])                      #need double semicolon for  it
+# string methods
+# upper = used to print from lower case to upper case(capital letters)
+# lower = convert upper case to lower case
+# title = capitalise initial of each word
+ # string methods
+name = "ishita"
+print(name.upper())
+text = "we are studying"
+print(text.title())
+# strip = it removes extra spaces
+msg = "    hello"
+print(msg.strip())
+# replace = it replace a word with another word
+text = "coffee is not good for health"
+print(text.replace("coffee","tea"))
+#count = helps in counting
+DNA = "AAATTTGGCCTTTAAAAA"
+print(DNA.count("A"))
+# find = helps to find a substring/index/position
+text = "we are learning python"
+print(text.find("are"))
+# f string = helps in changing the variables/string formatting
+name = "ishita"
+age = "23"
+print(f"my name is {name} and i am {age} years old")
+# input = it is used to take information from the user.
+# name = input("enter your name")
+# age = input("enter your age")
+# conversion/casting = to convert one data type into another
+# implicit conversion and explicit conversion
+#implicit conversion
+x = 5
+y = 2.5
+z = x+y
+print(z)
+# explicit conversion
+l = "10"
+print("age is" +l)
+a = "5"
+b = "7"
+result = int(a)+ int(b)
+print(result)
+# list in python
+# list is the collection of items stored in a variable, use square bracket for making a list
+genes = ["DNA","RNA","protein"]
+numbers = [1,2,3,4,5]
+print(genes[0])
+print(genes[-1])
+# list methods
+# append = add items in the end
+genes.append("pbr322")
+print(genes)
+# insert = add items in a specific location
+genes.insert(3,"clindamycin")
+print(genes)
+# remove = it removes a specific item
+genes.remove("pbr322")
+print(genes)
+# pop = it removes items by index
+genes.pop(2)
+print(genes)
+# reverse = to reverse the list we call this function
+genes.reverse()
+print(genes)
+# tuples and sets
+# tuples are like list but they are immutable
+# sets = umordered collection with no duplicates
+number = (1,2,3,4,5,)
+fruits = (1,"ishita",3.14,'false')
+# to access the items from the tuples
+print(fruits[1])
+drug = ["tetracycline","clindamycin","erythromycin"]
+drug[0] = "insulin"
+print(drug)
+# tuples are fastest than list,safe because they are immutable, good for fixed data
+# biopython
+
+import Bio
+print(Bio.__version__)
+from Bio.Seq import Seq
+dna = Seq("ATGGGCCCTTT")
+print(type(dna))
+
+
+
+
+    
