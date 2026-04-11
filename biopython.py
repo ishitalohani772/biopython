@@ -73,7 +73,7 @@ for feature in record.features:
     
     print(feature.type,feature.location)
     
-    print("hello") #demo
+    
 
 
 
