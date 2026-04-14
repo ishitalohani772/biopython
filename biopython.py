@@ -59,19 +59,25 @@ record = SeqIO.read("COX1.gb","genbank")
 print(record.id)
 print(record.description)
 print(record.annotations)
-print(len(record.features))
-# parse is use for studying multiple sequence at a time
-for record in SeqIO.parse("cox.fasta","fasta"):
-    print(record.id)
+ # uniprot - stores protein sequences
+record = SeqIO.read("insulin_Protein.fasta","fasta")
+print(record.id)
 print(record.description)
-print(len(record))
-print("-"*30)
-# to know the value of features
-for feature in record.features:
-    print(feature.type)
-    # to know the location 
-    
-    print(feature.type,feature.location)
+print(record.seq)
+print(len(record.seq))
+for record in SeqIO.parse("KAMA_uniprot.fasta","fasta"):
+    print(record.id)
+    print(record.description)
+    print(len(record))
+    print("-"*30)
+
+
+
+
+
+
+
+
     
     
 
